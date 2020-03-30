@@ -1,0 +1,28 @@
+<div id="login">
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" action="" method="post">
+                        <h3 class="text-center text-info">Login</h3>
+                        <div class="form-group">
+                            <label for="username" class="text-info">Username:</label><br>
+                            <input type="text" class="form-control" #myUser placeholder="IngreseUsuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-info">Password:</label><br>
+                            <input type="password" class="form-control" #myPass placeholder="IngreseClave">
+                        </div>
+                        <div class="form-group">
+                            <label for="remember-me" class="text-info"><span></span></label><br>
+                            <input type="submit" (click)="Validar()" name="submit" class="btn btn-info btn-md" value="login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+</div>
+
