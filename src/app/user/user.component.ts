@@ -20,7 +20,7 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit() {
-    setTimeout(() => this.getProducts(), 2000);
+     this.getProducts();
   }
   getProducts() {
     this.servicio.getProducts().subscribe(
@@ -34,7 +34,7 @@ export class UserComponent implements OnInit {
   }
   getIndex() {
     this.route.paramMap.subscribe(
-      res => (this.index = parseInt(res.get("id")))
+      res => (this.index = parseInt(res.get("index")))
     );
   }
 }
