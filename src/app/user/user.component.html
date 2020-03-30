@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="card">
+        <div class="card-header">
+          <h5 class="card-title">Surname: {{ user.username }}</h5>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Name: {{user.name}}</h5>
+          <p class="card-text">ID: {{user.id}}</p>
+          <p class="card-text">Mail: {{user.email }}</p>
+          <p class="card-text">Phone: {{user.phone }}</p>
+          <p class="card-text">Sitio Web: {{ user.website }}</p>
+          <p class="card-text">Street: {{user.address.street }}</p>
+          <p class="card-text">Suite: {{user.address.suite}}</p>
+          <p class="card-text">City: {{ user.address.city }}</p>
+          <p class="card-text">Company: {{user.company.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

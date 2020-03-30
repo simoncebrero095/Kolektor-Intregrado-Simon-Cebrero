@@ -33,9 +33,9 @@ html {
     margin-top: 40px;
 
 }
-/* .card-body{
-  height: 280px;
-  /* width: 450px; 
-} */
-
-/* .card-title{width: 450px;} */
+#card{
+  background-color: #f5f5f5;
+     width: 450px;  
+    height: 450px;
+    margin-top: 40px;
+}
