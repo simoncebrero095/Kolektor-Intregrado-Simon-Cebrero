@@ -3,10 +3,11 @@
     <div class="col-md-6" *ngFor="let us of users">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">Nombre: {{ us.name }}</h4>
-          <h4 class="card-title">Email: {{ us.email }}</h4>
-          <h4 class="card-title">Teléfono: {{ us.phone }}</h4>
-          <a routerLink="['/users/:id']" class="btn btn-primary">Detalle</a>
+          <h4 class="card-title">Name: {{ us.name }}</h4>
+          <h4 class="card-title">Mail: {{ us.email }}</h4>
+          <h4 class="card-title">Phone: {{ us.phone }}</h4>
+          <a routerLink="['/users/:id']" class="btn btn-primary">See more</a>
+          <a routerLink="['/users/:id']" class="btn btn-danger">Delete</a>
         </div>
       </div>
     </div>
