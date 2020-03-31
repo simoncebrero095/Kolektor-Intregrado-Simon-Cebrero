@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router,private appservice:AppServiceService) {} 
 
   usuarioOriginal = "test";
-  contrasenaOriginal = "123";
+  contrasenaOriginal = "Ayi+2020";
   ngOnInit(): void {}
     
 
