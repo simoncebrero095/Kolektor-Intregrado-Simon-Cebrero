@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['/users'])
      }
      else{
-       alert(';)')
+       alert('Error verify the data entered!!!')
      }    
 
     }
