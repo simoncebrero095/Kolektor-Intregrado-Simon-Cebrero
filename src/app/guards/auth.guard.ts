@@ -13,10 +13,8 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ):
-    | Observable<boolean | UrlTree>
-    | Promise<boolean | UrlTree>
-    | boolean
-    | UrlTree {
+    | Observable<boolean | UrlTree>| Promise<boolean | UrlTree>| boolean| UrlTree
+  {
     if (this.appservice.autorizar) {
       return true;
     } else {
