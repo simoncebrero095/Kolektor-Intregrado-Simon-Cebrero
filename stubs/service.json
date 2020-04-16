@@ -1,0 +1,15 @@
+[
+    {
+        "request": {
+            "url": "/usuarios",
+            "method": "GET"
+        },
+        "response": {
+            "status": 200,
+            "headers": {
+                "Content-type": "application/json"
+            },
+            "file": "./files/usuarios.json"
+        }
+    }
+]
