@@ -9,7 +9,7 @@ import {HttpClient} from '@angular/common/http';
 export class AppServiceService {
 autorizar:boolean;
 
-  URL = "https://jsonplaceholder.typicode.com/users";
+  URL = "http://127.0.0.1:8882/usuarios";
 
   constructor(private http:HttpClient) { }
   
