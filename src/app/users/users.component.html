@@ -7,7 +7,7 @@
           <h4 class="card-title">Mail: {{ us.email }}</h4>
           <h4 class="card-title">Phone: {{ us.phone }}</h4>
           <button (click)="See_more(i)" class="btn btn-primary">See more</button>
-          <button class="btn btn-danger">Delete</button>
+          <button (click)="DeleteUser(i)" class="btn btn-danger">Delete</button>
         </div>
       </div>
     </div>

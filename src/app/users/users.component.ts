@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
   styleUrls: ["./users.component.css"]
 })
 export class UsersComponent implements OnInit {
-  users;
+  users:any[] = [];
 
   constructor(private servicio: AppServiceService, private router: Router) {}
 
@@ -20,6 +20,7 @@ export class UsersComponent implements OnInit {
       respuesta => {
         this.users = respuesta;
         console.log(this.users);
+
       },
       error => console.log(error)
     );
@@ -27,4 +28,9 @@ export class UsersComponent implements OnInit {
   See_more(i) {
     this.router.navigate(["/user/", i]);
   }
+  pushProduct(usuario){
+    this.users.push(usuario)
+  }
+DeleteUser(i){this.users.splice(1,i)}
+
 }

@@ -14,6 +14,7 @@ autorizar:boolean;
   constructor(private http:HttpClient) { }
   
   getProducts() {
-    return this.http.get(this.URL);
+    return this.http.get<any[]>(this.URL);
   }
+
 }
